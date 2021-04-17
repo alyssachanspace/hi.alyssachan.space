@@ -125,7 +125,7 @@ p {
 | [屬性](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | <ul><li>`a[target="_blank"] { ... }` 選擇所有 `<a target="_blank">` 的元素</li><li>`a[href^="#"] { ... }` 選擇所有 `<a href="#...">` （開頭）的元素</li><li>`[lang\|="en"] { ... }` 選擇所有 `lang="en..."` （屬性值開頭）的元素</li><li>`a[href$=".pdf"] { ... }` 選擇所有 `<a href="...pdf">` （結尾）的元素</li><li>`a[title~="word"] { ... }` 選擇所有 `<a title="... word ...">` （含有完整字眼）的元素</li><li>`a[title*="substring"] { ... }` 選擇所有 `<a title="...substring...">` （含有字眼）的元素</ul> |
 | [反選](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) | `:not(p) { ... }` 選擇所有不是 `<p>` 的元素 |
 | 連結 | <ul><li>[`:link { ... }`](https://developer.mozilla.org/en-US/docs/Web/CSS/:link) 選擇所有未探訪過的連結</li><li>[`:visited { ... }`](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited) 選擇所有已探訪過的連結</li><li>[`:hover { ... }`](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover) 鼠標停留時的顯示</li><li>[`:active { ... }`](https://developer.mozilla.org/en-US/docs/Web/CSS/:active) 正在點選的連結</li></ul> |
-| 次序 | <ul><li>`:first-child { ... }` 選擇第一個元素</li><li>`:last-child { ... }` 選擇最後一個元素</li><li>`:nth-child(even) { ... }` 選擇排在雙數的元素，即第2, 4, 6, ... 個</li><li>`:nth-child(odd) { ... }` 選擇排在單數的元素，即第1, 3, 5, ... 個</li><li>`:nth-child(3n+1) { ... }` 選擇排在 `3n+1` 的元素，即第3, 4, 7, ... 個</li></ul> |
+| 次序 | <ul><li>`:first-child { ... }` 選擇第一個元素</li><li>`:last-child { ... }` 選擇最後一個元素</li><li>`:nth-child(even) { ... }` 選擇排在雙數的元素，即第2, 4, 6, ... 個</li><li>`:nth-child(odd) { ... }` 選擇排在單數的元素，即第1, 3, 5, ... 個</li><li>`:nth-child(3n+1) { ... }` 選擇排在 `3n+1` 的元素，即第1, 4, 7, ... 個</li></ul> |
 
 ### <a name="css_property"></a>常用 CSS 屬性
 | CSS 屬性 | 說明 | 值 |
