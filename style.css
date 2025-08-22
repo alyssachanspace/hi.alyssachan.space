@@ -1,21 +1,22 @@
-/*
- *
- * ===== Brand Colors =====
- * Primary #00b6b1
- * Secondary #ffc87d
- * Background #e4f8f3
- * Heading #424242
- * Body #828282
- * Border #ccc
- */
+:root {
+  /* ===== Brand Colors ===== */
+  --global--color-primary: #f2be33;
+  --global--color-secondary: #feef9f;
+  --global--color-background: #fcf4d7;
+  --global--color-background-text: rgba(242, 190, 51,0.1);
+  --global--color-heading: #424242;
+  --global--color-text: #828282;
+  --global--color-border: #ccc;
+  --global--color-white: #fff;
+}
 
 body {
-  background: #e4f8f3;
-  color: #424242;
+  background: var(--global--color-background);
+  color: var(--global--color-heading);
   font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang,Microsoft YaHei,Source Han Sans TC,Noto Sans CJK TC,WenQuanYi Micro Hei,sans-serif;
-  border-top: 9px solid #00b6b1;
+  border-top: 9px solid var(--global--color-primary);
   border-image-slice: 1;
-  border-image-source: linear-gradient(45deg, #00b6b1 0%, #a5e9d7 100%);
+  border-image-source: linear-gradient(45deg, var(--global--color-primary) 0%, var(--global--color-secondary) 100%);
 }
 
 .background-text {
@@ -26,7 +27,7 @@ body {
   font-family: serif;
   font-style: italic;
   letter-spacing: 10px;
-  color: rgba(0,182,177,0.1);
+  color: var(--global--color-background-text);
   width: 95%;
   overflow: hidden;
 }
@@ -62,7 +63,7 @@ a {
 }
 
 .card {
-  background: #fff;
+  background: var(--global--color-white);
   box-sizing: border-box;
   margin-top: 80px;
   padding: 55px 20px 10px 20px;
@@ -78,8 +79,8 @@ a {
   padding-bottom: 20px;
   margin-top: 8px;
   margin-bottom: 20px;
-  border-bottom: 1px dotted #ccc;
-  color: #828282;
+  border-bottom: 1px dotted var(--global--color-border);
+  color: var(--global--color-text);
 }
 .card h3 {
   font-size: 1rem;
@@ -93,11 +94,11 @@ a {
   margin-bottom: 10px;
 }
 .card p {
-  color: #828282;
+  color: var(--global--color-text);
   margin-top: 0;
 }
 .card a {
-  color: #00b6b1;
+  color: var(--global--color-primary);
 }
 .card a:hover {
   opacity: 0.5;
@@ -113,17 +114,17 @@ a {
 }
 .link a {
   display: block;
-  background: #fff;
-  color: #00b6b1;
+  background: var(--global--color-white);
+  color: var(--global--color-primary);
   padding: 15px 20px;
   margin-bottom: 15px;
   border: 2px solid;
   border-radius: 5px;
 }
 .link a:hover {
-  background: #00b6b1;
-  color: #fff;
-  border-color: #00b6b1;
+  background: var(--global--color-primary);
+  color: var(--global--color-white);
+  border-color: var(--global--color-primary);
 }
 .link a + h2 {
   margin-top: 30px;
@@ -133,7 +134,7 @@ a {
   text-align: center;
 }
 .social a {
-  color: #00b6b1;
+  color: var(--global--color-primary);
 }
 .social a:not(:last-child) {
   margin-right: 5px;
@@ -147,10 +148,10 @@ a {
 
 footer {
   text-align: center;
-  color: #828282;
+  color: var(--global--color-text);
 }
 footer a {
-  color: #00b6b1;
+  color: var(--global--color-primary);
 }
 
 @media only screen and (min-width: 768px) {
