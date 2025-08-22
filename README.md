@@ -162,4 +162,4 @@ p {
 `@media screen and (min-width: 1200px) { ... }` 瀏覽器視窗寬度最少 `1200px` 以上
 
 ## <a name="template"></a>網路名片模板
-到 https://codepen.io/alyssachan/pen/LYxQrOW ，在右下角按 `Fork` 按鈕複製 Pen。
+到 https://codepen.io/lennett/pen/LYxQrOW ，在右下角按 `Fork` 按鈕複製 Pen。
